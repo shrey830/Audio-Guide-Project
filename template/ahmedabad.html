@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link rel="stylesheet" href="{% static 'css/ahmedabad.css' %}">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
+    </head>
+    <body>
+
+        <!-- Header Section -->
+        <header class="hero">
+            <img src="{% static 'images/places/Sardar-Vallabhbhai-Patel-National-Museum-Thumbnail.jpg' %}" alt="Tour Place">
+            <div class="overlay">
+                <h1>Tours List</h1>
+            </div>
+        </header>
+        <!--Ended Header Section -->
+    
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li>></li>
+                <li class="current">Tours List</li>
+            </ul>
+        </nav>
+        <!-- End Breadcrumb -->
+
+    
+        <div class="container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-header">Search City</div>
+                <ul class="city-list">
+                    <li><a href="#"> Ahmedabad </a> </li>
+                    <li><a href="#"> Surat </a> </li>
+                    <li><a href="#"> Amreli </a> </li>
+                    <li><a href="#"> Bhavnagar </a> </li>
+                    <li><a href="#"> Patan </a> </li>
+                </ul>
+            </aside>
+            
+            <!-- Main Content -->
+            <main class="main-content">
+                <div class="top-bar">
+                    <span>10 monuments found</span>
+                    <div class="sort-section">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option>Historical</option>
+                            <option>Horror</option>
+                        </select>
+                    </div>
+                </div>
+            <!-- End Main Content -->
+                
+                <!-- Monument Card 1 -->
+                <div class="monument-card">
+                    <a href="{% url 'tour-detail1' %}">
+                    <img src="{% static 'images/places/Adalaj.jpg' %}" alt="Adalaj Stepwell">
+                    </a>
+                    <div class="card-content">
+                        <!-- <div class="rating">★★★☆☆ 15+ Reviews</div> -->
+                        <h2>Adalaj Stepwell</h2> <br>
+                        <p class="loc"> <i class='bx bxs-edit-location'></i> Ahmedabad, Gujarat</p> <br>
+                        <p>8:00 AM - 6:00 PM <span class="days">Monday - Sunday</span></p> <br>
+                        <p class="contact"> <i class='bx bx-phone-call'></i> 9825871325</p> <br>
+                        <a href="{% url 'tour-detail1' %}" class="explore-btn"> Explore </a>
+                    </div>
+                </div> <br> <br>
+
+                <!-- Monument Card 2 -->
+                <div class="monument-card">
+                    <!-- <a href="{% url 'tour-detail2' %}" > -->
+                    <img  src="{% static 'images/places/Rani Ki Vav29.jpg' %}" alt="Rani Ki Vav">
+                    <!-- </a> -->
+                    <div class="card-content">
+                        <!-- <div class="rating">★★★☆☆ 15+ Reviews</div> -->
+                        <h2>Rani Ki Vav</h2> <br>
+                        <p class="loc"> <i class='bx bxs-edit-location'></i> Ahmedabad, Gujarat</p> <br>
+                        <p>8:00 AM - 6:00 PM <span class="days">Monday - Sunday</span></p> <br>
+                        <p class="contact"> <i class='bx bx-phone-call'></i> 9016452584</p> <br>
+                        <a href="{% url 'tour-detail2' %}" class="explore-btn">Explore</a>
+                    </div>
+                </div> <br> <br>
+
+                <!-- Monument Card 3 -->
+                <div class="monument-card">
+                    
+                    <img src="{% static 'images/places/car.jpg' %}" alt="The Vintage Car Museum">
+                    <div class="card-content">
+                        <!-- <div class="rating">★★★☆☆ 15+ Reviews</div> -->
+                        <h2>The Vintage Car Museum</h2> <br>
+                        <p class="loc"> <i class='bx bxs-edit-location'></i> Ahmedabad, Gujarat</p> <br>
+                        <p>8:00 AM - 6:00 PM <span class="days">Monday - Sunday</span></p> <br>
+                        <p class="contact"> <i class='bx bx-phone-call'></i> 7015472356</p> <br>
+                        <a href="{% url 'tour-detail3' %}" class="explore-btn">Explore</a>
+                    </div>
+                </div> <br> <br>
+
+                <!-- Monument Card 4 -->
+                <div class="monument-card">
+                    <img src="{% static 'images/places/India - Architecture and Nature.jpg' %}" alt="Sabarmati Aashram">
+                    <div class="card-content">
+                        <!-- <div class="rating">★★★☆☆ 15+ Reviews</div> -->
+                        <h2>Sabarmati Aashram</h2> <br>
+                        <p class="loc"> <i class='bx bxs-edit-location'></i> Ahmedabad, Gujarat</p> <br>
+                        <p>8:00 AM - 6:00 PM <span class="days">Monday - Sunday</span></p> <br>
+                        <p class="contact"> <i class='bx bx-phone-call'></i>9725485010</p> <br>
+                        <a href="{% url 'tour-detail4' %}" class="explore-btn">Explore</a>
+                    </div>
+                </div> <br> <br>
+
+                <!-- Monument Card 5 -->
+                <div class="monument-card">
+                    <img src="{% static 'images/places/Sheth_Hutheesinh_Temple.jpg' %}" alt="Hutheesing Jain Temple">
+                    <div class="card-content">
+                        <!-- <div class="rating">★★★☆☆ 15+ Reviews</div> -->
+                        <h2>Hutheesing Jain Temple</h2> <br>
+                        <p class="loc"> <i class='bx bxs-edit-location'></i> Ahmedabad, Gujarat</p> <br>
+                        <p>8:00 AM - 6:00 PM <span class="days">Monday - Sunday</span></p> <br>
+                        <p class="contact"> <i class='bx bx-phone-call'></i> 3106248405</p> <br>
+                        <a href="{% url 'tour-detail5' %}" class="explore-btn">Explore</a>
+                    </div>
+                </div> <br> <br>
+
+                <!-- Monument Card 6 -->
+                <div class="monument-card">
+                    <img src="{% static 'images/places/jama.jpg' %}" alt="Jama Masjid">
+                    <div class="card-content">
+                        <!-- <div class="rating">★★★☆☆ 15+ Reviews</div> -->
+                        <h2>Jama Masjid</h2> <br>
+                        <p class="loc"> <i class='bx bxs-edit-location'></i> Ahmedabad, Gujarat</p> <br>
+                        <p>8:00 AM - 6:00 PM <span class="days">Monday - Sunday</span></p> <br>
+                        <p class="contact"> <i class='bx bx-phone-call'></i> 6354592403</p> <br>
+                        <a href="{% url 'tour-detail6' %}" class="explore-btn">Explore</a>
+                    </div>
+                </div> <br> <br>
+
+                <!-- Monument Card 7 -->
+                <div class="monument-card">
+                    <img src="{% static 'images/places/Unesco-World-Heritage-Site.jpg' %}" alt="Jhulta Minar">
+                    <div class="card-content">
+                        <!-- <div class="rating">★★★☆☆ 15+ Reviews</div> -->
+                        <h2>Jhulta Minar</h2> <br>
+                        <p class="loc"> <i class='bx bxs-edit-location'></i> Ahmedabad, Gujarat</p> <br>
+                        <p>8:00 AM - 6:00 PM <span class="days">Monday - Sunday</span></p> <br>
+                        <p class="contact"> <i class='bx bx-phone-call'></i> 991158776600</p> <br>
+                        <a href="{% url 'tour-detail7' %}" class="explore-btn">Explore</a>
+                    </div>
+                </div> <br> <br>
+
+                <!-- Monument Card 8 -->
+                <div class="monument-card">
+                    <img src="{% static 'images/places/kankaria-lake-ahmedabad.jpg' %}" alt="Kankaria Lake">
+                    <div class="card-content">
+                        <!-- <div class="rating">★★★☆☆ 15+ Reviews</div> -->
+                        <h2>Kankaria Lake</h2> <br>
+                        <p class="loc"> <i class='bx bxs-edit-location'></i> Ahmedabad, Gujarat</p> <br>
+                        <p>8:00 AM - 6:00 PM <span class="days">Monday - Sunday</span></p> <br>
+                        <p class="contact"> <i class='bx bx-phone-call'></i> 7058425874</p> <br>
+                        <a href="{% url 'tour-detail8' %}" class="explore-btn">Explore</a>
+                    </div>
+                </div> <br> <br>
+
+                <!-- Monument Card 9 -->
+                <div class="monument-card">
+                    <img src="{% static 'images/places/maxresdefault.jpg' %}" alt="Lal Darvaja">
+                    <div class="card-content">
+                        <div class="rating">★★★☆☆ 15+ Reviews</div>
+                        <h2>Lal Darvaja</h2> <br>
+                        <p class="loc"> <i class='bx bxs-edit-location'></i> Ahmedabad, Gujarat</p> <br>
+                        <p>8:00 AM - 6:00 PM <span class="days">Monday - Sunday</span></p> <br>
+                        <p class="contact"> <i class='bx bx-phone-call'></i> 2022025190</p> <br>
+                        <a href="{% url 'tour-detail9' %}" class="explore-btn">Explore</a>
+                    </div>
+                </div> <br> <br>
+
+                <!-- Monument Card 10 -->
+                <div class="monument-card">
+                    <img src="{% static 'images/places/sabarmati.jpg' %}" alt="Sabarmati Riverfront">
+                    <div class="card-content">
+                        <div class="rating">★★★☆☆ 15+ Reviews</div>
+                        <h2>Sabarmati Riverfront</h2> <br>
+                        <p class="loc"> <i class='bx bxs-edit-location'></i> Ahmedabad, Gujarat</p> <br>
+                        <p>8:00 AM - 6:00 PM <span class="days">Monday - Sunday</span></p> <br>
+                        <p class="contact"> <i class='bx bx-phone-call'></i> 9016458758</p> <br>
+                        <a href="{% url 'tour-detail10' %}" class="explore-btn">Explore</a>
+                    </div>
+                </div> <br> <br>
+                    
+                {% for city in cities %}
+                <div class="monument-card">
+                    <img src="{{ city.image.url }}" alt="{{ city.name }}">
+                        <div class="card-content">
+                            <!-- <div class="rating">★★★☆☆ {{ city.reviews }}+ Reviews</div> -->
+                            <h2>{{ city.name }}</h2> <br>
+                            <p class="loc"> <i class='bx bxs-edit-location'></i> {{ city.state }}</p> <br>
+                            <p>{{ city.opening_time }} - {{ city.closing_time }} <span class="days">{{ city.days_open }}</span></p> <br>
+                            <p class="contact"> <i class='bx bx-phone-call'></i> {{ city.contact_number }}</p> <br>
+                            <button class="explore-btn">Explore</button>
+                        </div>
+                    </div>
+                    {% endfor %} 
+            </main>
+        </div>
+        <!-- End Sidebar -->
+
+        <!-- Trending Tour Section -->
+        <div class="trending-tour">
+            <img src="{% static 'images/places/Heritage-Walk-Thumbnail1.jpg' %}" alt="Trending Tour" class="trending-image">
+            <div class="trending-content">
+                <h2>Discover the beauty and</h2>
+                <h2> culture of your destination</h2> <br>
+            <a href="{% url 'tour' %}" class="btn btn-primary">Trending Tour</a>
+        </div>
+        </div>
+        <!-- End Trending Tour Section -->
+
+    </body>
+</html>
+
+{% endblock %}
