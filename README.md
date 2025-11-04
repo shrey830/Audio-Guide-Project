@@ -35,4 +35,4 @@ audio-player.css, audio-player.js: Custom audio player interface.
 
 index.html, Audio1.html: Web pages for guide content.
 
-📂 Folder Structure (Highlights)
+📂 Folder Structure (Highlights)    
