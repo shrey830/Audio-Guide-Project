@@ -21,7 +21,7 @@ Backend: Python, Django
 
 Frontend: HTML, CSS, JavaScript
 
-Database: SQLite
+Database: SQLite     
 
 Audio Format: MP3
 
