@@ -16,7 +16,7 @@ Responsive audio player UI (custom CSS/JS included).
 Support for user information (e.g., with a SQL script for adding a phone column).    
 
 📁 Tech Stack
-
+         
 Backend: Python, Django
 
 Frontend: HTML, CSS, JavaScript
