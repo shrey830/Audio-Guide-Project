@@ -11,7 +11,7 @@ Web-based interface for accessing audio guides.
 
 Organized and easy-to-navigate structure with Django backend.
 
-Responsive audio player UI (custom CSS/JS included).
+Responsive audio player UI (custom CSS/JS included).       
 
 Support for user information (e.g., with a SQL script for adding a phone column).    
 
