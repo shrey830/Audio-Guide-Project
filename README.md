@@ -9,7 +9,7 @@ Audio playback of guide content (e.g., in English, Hindi, Gujarati).
 
 Web-based interface for accessing audio guides.
 
-Organized and easy-to-navigate structure with Django backend.
+Organized and easy-to-navigate structure with Django backend.     
 
 Responsive audio player UI (custom CSS/JS included).       
 
